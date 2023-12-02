@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by Tivotal-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form - Tivotal</title>
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <!--css file-->
+  <link rel="stylesheet" href="cards.css" />
+  <script>
+    function sendEmail(){
+     Email.send({
+       Host: "smtp.elasticemail.com", 
+       Username: "gun67@gmail.com",
+       Password: "DAE098D6D52D9BC94AB5D2EAF3CE7C4E7EA0",
+       To: 'gvhirani02@gmail.com',
+       From: "gun67@gmail.com",
+       Subject: "enquiry",
+       Body: "And this is the body",
+     }).then(
+       message => alert(message)
+     );
+   }
+
+
+ </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="big-circle"></div>
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          FOR STALL BOOKING AND MORE DETAILS:-
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <i class="fa-solid fa-map-location-dot icon"></i>
+            <p>Bhavnagar , Gujarat</p>
+          </div>
+          <div class="information">
+            <i class="fa-solid fa-envelope icon"></i>
+            <p>vision2030@gmail.com</p>
+          </div>
+          <div class="information">
+            <i class="fa-solid fa-phone-volume icon"></i>
+            <p>9925113615 OR 9909999500</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with Us</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3 class="title">Contact Us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="cname" class="input" />
+            <label for="">Company Name</label>
+            <span>Name</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+
+          <label for="">intrested in ,</label>
+          <div class="set">
+            <div class="input-container">
+              <input type="checkbox">
+              <label for="">Stoal</label>
+              <span>Stoal</span>
+            </div>
+          </div>
+          <div class="set2">
+            <div class="input-container">
+              <input type="checkbox">
+              <label for="">sponsorship</label>
+              <span>sponsorship</span>
+            </div>
+          </div>
+          <div class="set2">
+            <div class="input-container">
+              <input type="checkbox">
+              <label for="">open space</label>
+              <span>open space</span>
+            </div>
+          </div>
+
+          <p>Others</p>
+
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  
+   <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery with Filtering Using HTML CSS & JavaScript | Keyframe Effects</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+<body>
+
+<!-- MAIN -->
+<div class="main">
+
+	<h1>Gallery with Filtering</h1>
+	<hr>
+	<br>
+
+	<!-- Tabs Button -->
+	<div id="BtnContainer">
+		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		<button class="btn" onclick="filterSelection('Animals')"> Animals</button>
+		<button class="btn" onclick="filterSelection('Birds')"> Birds</button>
+		<button class="btn" onclick="filterSelection('Nature')"> Nature</button>
+	</div>
+	<!-- Tabs Button -->
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	
+		<!-- Birds column -->
+		<div class="column Birds">
+			<div class="content">
+				<img src="uncle.png" alt="Birds" />
+				<h4>Owl</h4>
+			</div>
+		</div>
+		<div class="column Birds">
+			<div class="content">
+				<img src="mm.png" alt="Birds" />
+				<h4>Parrot</h4>
+			</div>
+		</div>
+		<div class="column Birds">
+			<div class="content">
+				<img src="modi.png" alt="Birds" />
+				<h4>Peacock</h4>
+			</div>
+		</div>
+		<!-- End Birds column -->
+		
+		<!-- Animals column -->
+		<div class="column Animals">
+			<div class="content">
+				<img src="intro.png	" alt="Animals" />
+				<h4>Tiger</h4>
+			</div>
+		</div>
+		<div class="column Animals">
+			<div class="content">
+				<img src="lion.jpg" alt="Animals" />
+				<h4>Lion</h4>
+			</div>
+		</div>
+		<div class="column Animals">
+			<div class="content">
+				<img src="bear.jpg" alt="Animals" />
+				<h4>Bear</h4>
+			</div>
+		</div>
+		<!-- End Animals column -->
+	  
+		<!-- Nature column -->
+		<div class="column Nature">
+			<div class="content">
+				<img src="Nature1.jpg" alt="Nature" />
+				<h4>Nature 1</h4>
+			</div>
+		</div>
+		<div class="column Nature">
+			<div class="content">
+				<img src="Nature2.jpg" alt="Nature" />
+				<h4>Nature 2</h4>
+			</div>
+		</div>
+		<div class="column Nature">
+			<div class="content">
+				<img src="Nature3.jpg" alt="Nature" />
+				<h4>Nature 3</h4>
+			</div>
+		</div>
+		<!-- End Nature column -->
+	
+	</div>
+	<!-- END Portfolio Gallery Grid -->
+
+</div>
+<!-- END MAIN -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
